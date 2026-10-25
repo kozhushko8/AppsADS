@@ -62,13 +62,13 @@
             max-width: 1200px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 24px;
+            gap: 28px;
         }
 
         .card {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
-            border-radius: 14px;
+            border-radius: 16px;
             overflow: hidden;
             display: flex;
             flex-direction: column;
@@ -81,24 +81,33 @@
             border-color: #3e4f47;
         }
 
-        .card-img-wrapper {
-            width: 100%;
-            height: 190px;
-            background-color: #0b0f0d;
-            overflow: hidden;
+        /* Стилізація під рамку пристрою (як на скріншоті) */
+        .device-frame {
+            background-color: #0d1110;
+            border-bottom: 1px solid var(--border-color);
+            padding: 14px 14px 10px 14px;
             position: relative;
         }
 
-        .card-img-wrapper img {
+        .device-screen {
+            width: 100%;
+            height: 190px;
+            background-color: #0b0f0d;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .device-screen img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            opacity: 0.9;
-            transition: opacity 0.3s ease, transform 0.3s ease;
+            opacity: 0.95;
+            transition: transform 0.3s ease;
         }
 
-        .card:hover .card-img-wrapper img {
-            opacity: 1;
+        .card:hover .device-screen img {
             transform: scale(1.03);
         }
 
@@ -240,11 +249,13 @@
                             buttonsHtml += `<a href="${app.apple}" target="_blank" class="btn btn-apple">App Store</a>`;
                         }
 
-                        const imageUrl = app.mobileImage || app.tvImage || '';
+                        const imageUrl = app.tvImage || app.mobileImage || '';
 
                         card.innerHTML = `
-                            <div class="card-img-wrapper">
-                                <img src="${imageUrl}" alt="${app.title}" loading="lazy">
+                            <div class="device-frame">
+                                <div class="device-screen">
+                                    <img src="${imageUrl}" alt="${app.title}" loading="lazy">
+                                </div>
                             </div>
                             <div class="card-body">
                                 <div class="card-title">${app.title}</div>
@@ -266,4 +277,3 @@
     </script>
 </body>
 </html>
-
