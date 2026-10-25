@@ -6,16 +6,17 @@
     <title>Applications Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #0d1117;
-            --card-bg: #161b22;
-            --border-color: #30363d;
+            --bg-color: #121614;
+            --card-bg: #1a211e;
+            --card-hover: #222b27;
+            --border-color: #2b3631;
             --text-main: #f0f6fc;
-            --text-sub: #8b949e;
-            --accent-blue: #2f81f7;
+            --text-sub: #9da8a3;
             --accent-green: #238636;
+            --accent-blue: #2f81f7;
         }
 
         * {
@@ -25,7 +26,8 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Exo 2', sans-serif;
+            font-weight: 300;
             background-color: var(--bg-color);
             color: var(--text-main);
             min-height: 100vh;
@@ -37,17 +39,17 @@
 
         header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             max-width: 600px;
         }
 
         header h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 12px;
-            background: linear-gradient(135deg, #58a6ff 0%, #bc8cff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            font-family: 'Exo 2', sans-serif;
+            font-weight: 300;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            color: #ffffff;
         }
 
         header p {
@@ -57,32 +59,32 @@
 
         .container {
             width: 100%;
-            max-width: 1100px;
+            max-width: 1200px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 24px;
         }
 
         .card {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
-            border-radius: 16px;
+            border-radius: 14px;
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
         }
 
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-            border-color: #484f58;
+            transform: translateY(-4px);
+            background-color: var(--card-hover);
+            border-color: #3e4f47;
         }
 
         .card-img-wrapper {
             width: 100%;
-            height: 200px;
-            background-color: #010409;
+            height: 190px;
+            background-color: #0b0f0d;
             overflow: hidden;
             position: relative;
         }
@@ -91,24 +93,48 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.3s ease;
+            opacity: 0.9;
+            transition: opacity 0.3s ease, transform 0.3s ease;
         }
 
         .card:hover .card-img-wrapper img {
-            transform: scale(1.05);
+            opacity: 1;
+            transform: scale(1.03);
         }
 
         .card-body {
-            padding: 24px;
+            padding: 22px;
             display: flex;
             flex-direction: column;
             flex-grow: 1;
         }
 
         .card-title {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 10px;
+            font-family: 'Exo 2', sans-serif;
+            font-weight: 300;
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+        }
+
+        .platforms {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 14px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            color: var(--text-sub);
+            font-size: 0.7rem;
+            font-weight: 300;
+            padding: 3px 8px;
+            border-radius: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .card-desc {
@@ -119,27 +145,9 @@
             flex-grow: 1;
         }
 
-        .platforms {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-
-        .badge {
-            background: rgba(110, 118, 129, 0.1);
-            border: 1px solid var(--border-color);
-            color: var(--text-sub);
-            font-size: 0.75rem;
-            font-weight: 600;
-            padding: 4px 10px;
-            border-radius: 20px;
-            text-transform: uppercase;
-        }
-
         .buttons {
             display: flex;
-            gap: 12px;
+            gap: 10px;
             flex-wrap: wrap;
         }
 
@@ -148,41 +156,43 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 10px 16px;
+            padding: 10px 14px;
             border-radius: 8px;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
+            font-family: 'Exo 2', sans-serif;
+            font-weight: 300;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
             transition: opacity 0.2s ease;
-            min-width: 120px;
+            min-width: 110px;
         }
 
         .btn:hover {
-            opacity: 0.9;
+            opacity: 0.85;
         }
 
         .btn-android {
-            background-color: #238636;
+            background-color: var(--accent-green);
             color: #ffffff;
         }
 
         .btn-apple {
-            background-color: #2f81f7;
+            background-color: var(--accent-blue);
             color: #ffffff;
         }
 
         footer {
-            margin-top: auto;
-            padding-top: 60px;
+            margin-top: 50px;
             color: var(--text-sub);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
         }
 
         .loading {
             grid-column: 1 / -1;
             text-align: center;
             color: var(--text-sub);
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             padding: 40px;
         }
     </style>
@@ -190,8 +200,8 @@
 <body>
 
     <header>
-        <h1>My Applications</h1>
-        <p>Explore our lineup of mobile and TV applications.</p>
+        <h1>Our Applications</h1>
+        <p>Discover cross-platform apps designed for your convenience.</p>
     </header>
 
     <main class="container" id="apps-container">
@@ -199,34 +209,29 @@
     </main>
 
     <footer>
-        &copy; <script>document.write(new Date().getFullYear())</script> All rights reserved.
+        &copy; <script>document.write(new Date().getFullYear())</script> Apps Portfolio. All rights reserved.
     </footer>
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            // Отримуємо мову браузера (наприклад "uk", "de", "en")
             const userLang = (navigator.language || navigator.userLanguage || "en").substring(0, 2).toLowerCase();
             
             fetch('./ads.json')
                 .then(response => response.json())
                 .then(apps => {
                     const container = document.getElementById('apps-container');
-                    container.innerHTML = ''; // Очищаємо текст завантаження
+                    container.innerHTML = '';
 
                     apps.forEach(app => {
-                        // Обираємо опис: мовою користувача -> або en -> або перший наявний
                         let desc = app.description[userLang] || app.description['en'] || Object.values(app.description)[0] || '';
 
-                        // Створюємо картку
                         const card = document.createElement('div');
                         card.className = 'card';
 
-                        // Формуємо бейджі платформ
                         const platformsHtml = (app.platforms || [])
                             .map(p => `<span class="badge">${p}</span>`)
                             .join('');
 
-                        // Формуємо кнопки завантаження
                         let buttonsHtml = '';
                         if (app.android) {
                             buttonsHtml += `<a href="${app.android}" target="_blank" class="btn btn-android">Google Play</a>`;
@@ -235,7 +240,6 @@
                             buttonsHtml += `<a href="${app.apple}" target="_blank" class="btn btn-apple">App Store</a>`;
                         }
 
-                        // Слот картинки (беремо mobileImage, якщо немає — tvImage)
                         const imageUrl = app.mobileImage || app.tvImage || '';
 
                         card.innerHTML = `
@@ -262,3 +266,4 @@
     </script>
 </body>
 </html>
+
