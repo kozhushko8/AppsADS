@@ -1,6 +1,5 @@
 [
   {
-    "id": "oradio",
     "bundle": "ks.online.radio",
     "title": "ORadio",
     "description": {
@@ -21,7 +20,6 @@
     "platforms": ["mob", "tv", "ios"]
   },
   {
-    "id": "videobox",
     "bundle": "ks.video.box",
     "title": "VideoBox",
     "description": {
@@ -38,7 +36,25 @@
     "tvImage": "https://kozhushko8.github.io/AppsADS/img/vbox/tv.jpg",
     "mobileImage": "https://kozhushko8.github.io/AppsADS/img/vbox/mb.jpg",
     "android": "https://play.google.com/store/apps/details?id=ks.video.box",
-    "apple": "https://apps.apple.com/app/id6813002303",
+    "platforms": ["mob", "tv"]
+  },
+  {
+    "bundle": "ks.torrent.parser",
+    "title": "TParser",
+    "description": {
+      "uk": "Шукайте торренти на багатьох трекерах та отримуйте magnet-посилання швидко і легко.",
+      "en": "Search torrents across multiple trackers and get magnet links fast and easy.",
+      "de": "Durchsuchen Sie Torrents auf mehreren Trackern und erhalten Sie Magnet-Links schnell und einfach.",
+      "fr": "Recherchez des torrents sur plusieurs trackers et obtenez des liens magnet rapidement et facilement.",
+      "es": "Busca torrents en múltiples rastreadores y obtén enlaces magnet de forma rápida y sencilla.",
+      "pt": "Pesquise torrents em vários rastreadores e obtenha links magnet de forma rápida e fácil.",
+      "it": "Cerca torrent su più tracker e ottieni link magnet in modo semplice e veloce.",
+      "pl": "Przeszukuj torrenty na wielu trackerach i szybko i łatwo pobieraj linki magnet.",
+      "ru": "Ищите торренты по множеству трекеров и получайте magnet-ссылки быстро и легко."
+    },
+    "tvImage": "https://kozhushko8.github.io/AppsADS/img/tparser/tv.jpg",
+    "mobileImage": "https://kozhushko8.github.io/AppsADS/img/tparser/mb.jpg",
+    "android": "https://play.google.com/store/apps/details?id=ks.torrent.parser",
     "platforms": ["mob", "tv"]
   }
 ]
