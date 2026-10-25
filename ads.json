@@ -1,0 +1,12 @@
+{
+  "ads": [
+    {
+      "id": "oradio",
+      "title": "ORadio",
+      "description": "Слухайте тисячі онлайн-радіостанцій.",
+      "tvImage": "https://kozhushko8.github.io/AllApps/images/oradio_tv.jpg",
+      "mobileImage": "https://kozhushko8.github.io/AllApps/images/oradio_mb.jpg",
+      "url": "https://play.google.com/store/apps/details?id=ks.online.radio"
+    }
+  ]
+}
