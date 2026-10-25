@@ -61,7 +61,7 @@
             width: 100%;
             max-width: 1200px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
             gap: 28px;
         }
 
@@ -81,19 +81,52 @@
             border-color: #3e4f47;
         }
 
-        /* Стилізація під рамку пристрою (як на скріншоті) */
+        /* Зовнішня рамка */
         .device-frame {
             background-color: #0d1110;
             border-bottom: 1px solid var(--border-color);
-            padding: 14px 14px 10px 14px;
-            position: relative;
+            padding: 12px;
         }
 
-        .card img {
+        /* Екран без жорсткої висоти */
+        .device-screen {
+            position: relative;
             width: 100%;
-            border:5px solid #555;
-            border-radius:10px;
-            aspect-ratio: 1 / .55;
+            background-color: #080a09;
+            border-radius: 8px;
+            overflow: visible;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Головна картинка з aspect-ratio */
+        .device-screen img.tv-img {
+            width: 100%;
+            aspect-ratio: 1 / 0.55;
+            object-fit: cover;
+            display: block;
+            border-radius: 7px;
+        }
+
+        /* Фрейм телефону в лівому нижньому куті */
+        .phone-overlay {
+            position: absolute;
+            left: -12px;
+            bottom: -12px;
+            width: 22%;
+            aspect-ratio: 9 / 18;
+            background-color: #121614;
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+            z-index: 2;
+        }
+
+        .phone-overlay img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         .card-body {
@@ -234,12 +267,23 @@
                             buttonsHtml += `<a href="${app.apple}" target="_blank" class="btn btn-apple">App Store</a>`;
                         }
 
-                        const imageUrl = app.tvImage || app.mobileImage || '';
+                        const tvImage = app.tvImage || '';
+                        const mobileImage = app.mobileImage || '';
+
+                        let phoneHtml = '';
+                        if (mobileImage) {
+                            phoneHtml = `
+                                <div class="phone-overlay">
+                                    <img src="${mobileImage}" alt="${app.title} mobile" loading="lazy">
+                                </div>
+                            `;
+                        }
 
                         card.innerHTML = `
                             <div class="device-frame">
                                 <div class="device-screen">
-                                    <img src="${imageUrl}" alt="${app.title}" loading="lazy">
+                                    <img class="tv-img" src="${tvImage}" alt="${app.title}" loading="lazy">
+                                    ${phoneHtml}
                                 </div>
                             </div>
                             <div class="card-body">
