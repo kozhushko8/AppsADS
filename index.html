@@ -92,10 +92,7 @@
         .device-screen {
             position: relative;
             width: 100%;
-            background-color: #080a09;
-            border-radius: 8px;
             overflow: visible;
-            border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         /* Головна картинка з aspect-ratio */
@@ -104,20 +101,16 @@
             aspect-ratio: 1 / 0.55;
             object-fit: cover;
             display: block;
-            border-radius: 7px;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
         }
 
         /* Фрейм телефону в лівому нижньому куті */
         .phone-overlay {
             position: absolute;
-            left: -12px;
-            bottom: -12px;
-            width: 22%;
-            aspect-ratio: 9 / 18;
-            background-color: #121614;
-            border: 2px solid var(--border-color);
-            border-radius: 10px;
-            overflow: hidden;
+            left: 15px;
+            bottom: 15px;
+            width: 15%;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
             z-index: 2;
         }
@@ -125,8 +118,11 @@
         .phone-overlay img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
             display: block;
+            border: 2px solid var(--border-color);
+            aspect-ratio: 9 / 18;
+            border-radius: 10px;
+            border: 2px solid #333;
         }
 
         .card-body {
