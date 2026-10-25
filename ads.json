@@ -2,11 +2,14 @@
   "ads": [
     {
       "id": "oradio",
+      "bundle": "ks.online.radio",
       "title": "ORadio",
       "description": "Слухайте тисячі онлайн-радіостанцій.",
-      "tvImage": "https://kozhushko8.github.io/AllApps/images/oradio_tv.jpg",
-      "mobileImage": "https://kozhushko8.github.io/AllApps/images/oradio_mb.jpg",
-      "url": "https://play.google.com/store/apps/details?id=ks.online.radio"
+      "tvImage": "https://kozhushko8.github.io/AppsADS/img/oradio/tv.jpg",
+      "mobileImage": "https://kozhushko8.github.io/AppsADS/img/oradio/mb.jpg",
+      "android": "https://play.google.com/store/apps/details?id=ks.online.radio",
+      "apple": "https://apps.apple.com/app/id6813001352",
+      "platforms": ["mob","tv","ios","macos"]
     }
   ]
 }
