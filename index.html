@@ -143,6 +143,13 @@
         .platforms {
             display: flex;
             gap: 6px;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+
+        .languages {
+            display: flex;
+            gap: 6px;
             margin-bottom: 14px;
             flex-wrap: wrap;
         }
@@ -257,7 +264,7 @@
                         const card = document.createElement('div');
                         card.className = 'card';
 
-                        // Формуємо бейджі платформ та мов
+                        // Формуємо окремі блоки для платформ і мов
                         const platformsHtml = (app.platforms || [])
                             .map(p => `<span class="badge">${p}</span>`)
                             .join('');
@@ -265,8 +272,6 @@
                         const languagesHtml = Object.keys(app.description || {})
                             .map(lang => `<span class="badge badge-lang">${lang.toUpperCase()}</span>`)
                             .join('');
-
-                        const tagsHtml = platformsHtml + languagesHtml;
 
                         let buttonsHtml = '';
                         if (app.android) {
@@ -297,7 +302,8 @@
                             </div>
                             <div class="card-body">
                                 <div class="card-title">${app.title}</div>
-                                <div class="platforms">${tagsHtml}</div>
+                                <div class="platforms">${platformsHtml}</div>
+                                <div class="languages">${languagesHtml}</div>
                                 <div class="card-desc">${desc}</div>
                                 <div class="buttons">${buttonsHtml}</div>
                             </div>
