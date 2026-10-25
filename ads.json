@@ -1,15 +1,44 @@
-{
-  "ads": [
-    {
-      "id": "oradio",
-      "bundle": "ks.online.radio",
-      "title": "ORadio",
-      "description": "Слухайте тисячі онлайн-радіостанцій.",
-      "tvImage": "https://kozhushko8.github.io/AppsADS/img/oradio/tv.jpg",
-      "mobileImage": "https://kozhushko8.github.io/AppsADS/img/oradio/mb.jpg",
-      "android": "https://play.google.com/store/apps/details?id=ks.online.radio",
-      "apple": "https://apps.apple.com/app/id6813001352",
-      "platforms": ["mob","tv","ios","macos"]
-    }
-  ]
-}
+[
+  {
+    "id": "oradio",
+    "bundle": "ks.online.radio",
+    "title": "ORadio",
+    "description": {
+      "uk": "Найкращі радіостанції вашої країни та найкращі подкасти в одному додатку, який завжди з вами.",
+      "en": "Top radio stations of your country and the best podcasts in one app that is always with you.",
+      "de": "Die Top-Radiosender Ihres Landes und die besten Podcasts in einer App, die immer dabei ist.",
+      "fr": "Les meilleures stations de radio de votre pays et les meilleurs podcasts dans une application toujours avec vous.",
+      "es": "Las mejores emisoras de radio de tu país y los mejores podcasts en una sola aplicación que siempre te acompaña.",
+      "pt": "As principais estações de rádio do seu país e os melhores podcasts em um aplicativo que está sempre com você.",
+      "it": "Le migliori stazioni radio del tuo paese e i migliori podcast in un'app sempre con te.",
+      "pl": "Najlepsze stacje radiowe w Twoim kraju i najlepsze podcasty w jednej aplikacji, która jest zawsze z Tobą.",
+      "ru": "Лучшие радиостанции вашей страны и лучшие подкасты в одном приложении, которое всегда с вами."
+    },
+    "tvImage": "https://kozhushko8.github.io/AppsADS/img/oradio/tv.jpg",
+    "mobileImage": "https://kozhushko8.github.io/AppsADS/img/oradio/mb.jpg",
+    "android": "https://play.google.com/store/apps/details?id=ks.online.radio",
+    "apple": "https://apps.apple.com/app/id6813001352",
+    "platforms": ["mob", "tv", "ios"]
+  },
+  {
+    "id": "videobox",
+    "bundle": "ks.video.box",
+    "title": "VideoBox",
+    "description": {
+      "uk": "Шукайте інформацію про фільми та серіали, отримуйте персоналізовані рекомендації, додавайте улюблене в закладки та відстежуйте нові епізоди улюблених шоу.",
+      "en": "Search for movie and TV show information, get personalized recommendations, bookmark your favorites, and track new episodes of your favorite shows.",
+      "de": "Suchen Sie nach Informationen zu Filmen und TV-Shows, erhalten Sie personalisierte Empfehlungen, speichern Sie Ihre Favoriten und verfolgen Sie neue Episoden Ihrer Lieblingsshows.",
+      "fr": "Recherchez des informations sur les films et les séries, obtenez des recommandations personnalisées, ajoutez vos favoris à vos signets et suivez les nouveaux épisodes de vos émissions préférées.",
+      "es": "Busca información sobre películas y programas de televisión, obtén recomendaciones personalizadas, guarda tus favoritos y sigue los nuevos episodios de tus programas preferidos.",
+      "pt": "Pesquise informações sobre filmes e programas de TV, receba recomendações personalizadas, salve seus favoritos e acompanhe novos episódios de suas séries favoritas.",
+      "it": "Cerca informazioni su film e programmi TV, ricevi consigli personalizzati, salva i tuoi preferiti e tieni traccia dei nuovi episodi dei tuoi show preferiti.",
+      "pl": "Szukaj informacji o filmach i serialach, otrzymuj spersonalizowane rekomendacje, dodawaj ulubione do zakładek i śledź nowe odcinki swoich ulubionych programów.",
+      "ru": "Ищите информацию о фильмах и сериалах, получайте персональные рекомендации, добавляйте избранное в закладки и отслеживайте новые эпизоды любимых шоу."
+    },
+    "tvImage": "https://kozhushko8.github.io/AppsADS/img/vbox/tv.jpg",
+    "mobileImage": "https://kozhushko8.github.io/AppsADS/img/vbox/mb.jpg",
+    "android": "https://play.google.com/store/apps/details?id=ks.video.box",
+    "apple": "https://apps.apple.com/app/id6813002303",
+    "platforms": ["mob", "tv"]
+  }
+]
