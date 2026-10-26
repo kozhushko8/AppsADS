@@ -17,7 +17,7 @@
     "mobileImage": "https://kozhushko8.github.io/AppsADS/img/oradio/mb.jpg",
     "android": "https://play.google.com/store/apps/details?id=ks.online.radio",
     "apple": "https://apps.apple.com/app/id6813001352",
-    "platforms": ["mob", "tv", "ios"]
+    "platforms": ["Android", "Android TV", "iOS"]
   },
   {
     "bundle": "ks.video.box",
@@ -36,7 +36,7 @@
     "tvImage": "https://kozhushko8.github.io/AppsADS/img/vbox/tv.jpg",
     "mobileImage": "https://kozhushko8.github.io/AppsADS/img/vbox/mb.jpg",
     "android": "https://play.google.com/store/apps/details?id=ks.video.box",
-    "platforms": ["mob", "tv"]
+    "platforms": ["Android", "Android TV"]
   },
   {
     "bundle": "ks.torrent.parser",
@@ -55,6 +55,6 @@
     "tvImage": "https://kozhushko8.github.io/AppsADS/img/tparser/tv.jpg",
     "mobileImage": "https://kozhushko8.github.io/AppsADS/img/tparser/mb.jpg",
     "android": "https://play.google.com/store/apps/details?id=ks.torrent.parser",
-    "platforms": ["mob", "tv"]
+    "platforms": ["Android"]
   }
 ]
