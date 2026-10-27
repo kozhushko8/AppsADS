@@ -56,5 +56,24 @@
     "mobileImage": "https://kozhushko8.github.io/AppsADS/img/tparser/mb.jpg",
     "android": "https://play.google.com/store/apps/details?id=ks.torrent.parser",
     "platforms": ["Android"]
+  },
+  {
+    "bundle": "ks.atv.control",
+    "title": "ATVControl",
+    "description": {
+      "uk": "Управляйте вашим Android TV чи Google TV за допомогою телефону швидко та просто.",
+      "en": "Control your Android TV or Google TV with your phone quickly and easily.",
+      "de": "Steuern Sie Ihren Android TV oder Google TV schnell und einfach mit Ihrem Smartphone.",
+      "fr": "Contrôlez votre Android TV ou Google TV avec votre téléphone rapidement et facilement.",
+      "es": "Controla tu Android TV o Google TV con tu teléfono de forma rápida y sencilla.",
+      "pt": "Controle a sua Android TV ou Google TV com o telemóvel de forma rápida e simples.",
+      "it": "Controlla la tua Android TV o Google TV con lo smartphone in modo facile e veloce.",
+      "pl": "Steruj swoim Android TV lub Google TV za pomocą telefonu szybko i prosto.",
+      "ru": "Управляйте вашим Android TV или Google TV с помощью телефона быстро и просто."
+    },
+    "tvImage": "https://kozhushko8.github.io/AppsADS/img/atvcontrol/tv.jpg",
+    "mobileImage": "https://kozhushko8.github.io/AppsADS/img/atvcontrol/mb.jpg",
+    "android": "https://play.google.com/store/apps/details?id=ks.atv.control",
+    "platforms": ["Android"]
   }
 ]
