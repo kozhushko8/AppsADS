@@ -36,7 +36,8 @@
     "tvImage": "https://kozhushko8.github.io/AppsADS/img/vbox/tv.jpg",
     "mobileImage": "https://kozhushko8.github.io/AppsADS/img/vbox/mb.jpg",
     "android": "https://play.google.com/store/apps/details?id=ks.video.box",
-    "platforms": ["Android", "Android TV"]
+    "apple": "https://apps.apple.com/app/id6813002303",
+    "platforms": ["Android", "Android TV", "iOS"]
   },
   {
     "bundle": "ks.torrent.parser",
