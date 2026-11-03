@@ -17,7 +17,7 @@
     "mobileImage": "https://kozhushko8.github.io/AppsADS/img/oradio/mb.jpg",
     "android": "https://play.google.com/store/apps/details?id=ks.online.radio",
     "apple": "https://apps.apple.com/app/id6813001352",
-    "platforms": ["Android", "Android TV", "iOS"]
+    "platforms": ["Android", "Android TV", "iOS", "macOS"]
   },
   {
     "bundle": "ks.video.box",
