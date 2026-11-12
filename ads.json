@@ -75,6 +75,7 @@
     "tvImage": "https://kozhushko8.github.io/AppsADS/img/atvcontrol/tv.jpg",
     "mobileImage": "https://kozhushko8.github.io/AppsADS/img/atvcontrol/mb.jpg",
     "android": "https://play.google.com/store/apps/details?id=ks.atv.control",
+    "apple": "https://apps.apple.com/app/id6823091079",
     "platforms": ["Android", "macOS"]
   }
 ]
