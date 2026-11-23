@@ -95,5 +95,24 @@
     "tvImage": "https://kozhushko8.github.io/AppsADS/img/posterstudio/tv.jpg",
     "apple": "https://apps.apple.com/app/id6823625762",
     "platforms": ["macOS"]
+  },
+  {
+    "bundle": "ks.plux.server",
+    "title": "Plux",
+    "description": {
+      "uk": "Діліться файлами з вашого телефону з будь-яким пристроєм в локальній мережі за допомогою DLNA, FTP, HTTP або WebDAV серверу.",
+      "en": "Share files from your phone with any device on your local network using a DLNA, FTP, HTTP, or WebDAV server.",
+      "de": "Teilen Sie Dateien von Ihrem Telefon mit jedem Gerät im lokalen Netzwerk über einen DLNA, FTP, HTTP oder WebDAV Server.",
+      "fr": "Partagez des fichiers depuis votre téléphone avec n'importe quel appareil sur votre réseau local à l'aide d'un serveur DLNA, FTP, HTTP ou WebDAV.",
+      "es": "Comparte archivos desde tu teléfono con cualquier dispositivo de tu red local mediante un servidor DLNA, FTP, HTTP o WebDAV.",
+      "pt": "Compartilhe arquivos do seu telefone com qualquer dispositivo na rede local usando um servidor DLNA, FTP, HTTP ou WebDAV.",
+      "it": "Condividi file dal tuo telefono con qualsiasi dispositivo della rete locale tramite un server DLNA, FTP, HTTP o WebDAV.",
+      "pl": "Udostępniaj pliki ze swojego telefonu dowolnemu urządzeniu w sieci lokalnej za pomocą serwera DLNA, FTP, HTTP lub WebDAV.",
+      "ru": "Делитесь файлами с вашего телефона с любым устройством в локальной сети с помощью DLNA, FTP, HTTP или WebDAV сервера."
+    },
+    "tvImage": "https://kozhushko8.github.io/AppsADS/img/plux/tv.jpg",
+    "mobileImage": "https://kozhushko8.github.io/AppsADS/img/plux/mb.jpg",
+    "android": "https://play.google.com/store/apps/details?id=ks.plux.server",
+    "platforms": ["Android"]
   }
 ]
